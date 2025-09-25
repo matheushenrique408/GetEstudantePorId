@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 const estudantes = [
-    {id: 1, nome: "Pedro Henrique", idade: 17, media: "A de Amanda"},
+    {id: 1, nome: "Pedro Henrique", idade: 17, media: "100kg no supino"},
     {id: 2, nome: "Joao Papadunhio", idade: 16, media: "nao sabe ingles"},
     {id: 3, nome: "Matheus Luciano", idade: 16, media: "quase 0"},
     {id: 4, nome: "Arthur Marcelino", idade: 17, media: "666"},
@@ -18,7 +18,7 @@ const estudantes = [
 ];
 
 app.get('/', (req,res) =>{
-    res.send('http://localhost:3000/estudante/(insira o id)')
+    res.send('http://localhost:3000/estudante/(id do estudante)')
 });
 
 app.get('/estudante/:id', (req,res) =>{
@@ -27,11 +27,12 @@ app.get('/estudante/:id', (req,res) =>{
     if (estudante) {
         res.send('Nome: ' + estudante.nome + '<br>' + 'Idade: ' + estudante.idade + '<br>' + 'Média : ' + estudante.media) ;   
     }else {
-        res.send('Não foi encontrado o estudante com o ID: ' +id)
+        res.send('Não existe estudante com o id: ' +id)
     }
     
 })
 
 app.listen(3000, () => {
     console.log ("Servidor em execução...")
+
 })
