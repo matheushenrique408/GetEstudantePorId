@@ -10,10 +10,10 @@ const estudantes = [
     {id: 6, nome: "Juan Vila Nova Rojas Moreno", idade: 17, media: "odeia padre gay"} ,
     {id: 7, nome: "João Guilherme", idade: 17, media: "deu pra passar"},
     {id: 8, nome: "Artur Tomé", idade: 17, media: "redacao defendendo o racismo"},
-    {id: 9, nome: "Debora", idade: 22, media: "Se casou com matheus henrique"},
+    {id: 9, nome: "Femboy", idade: 22, media: "Se casou com matheus henrique (luana) (matheus henrique é o passivo)"},
     {id: 10, nome: "Amanda tacielly", idade: 17, media: "700R$"},
     {id: 11, nome: "Rômulo siqueira", idade: 16, media: "bilologia"},
-    {id: 12, nome: "Matheus Henrique", idade: 17, media: "I ghost the down cool"}
+    {id: 12, nome: "Luana buracão (mateus henrique)", idade: 17, media: "I ghost the down cool"}
     
 ];
 
@@ -36,4 +36,5 @@ app.listen(3000, () => {
     console.log ("Servidor em execução...")
 
 })
+
 
